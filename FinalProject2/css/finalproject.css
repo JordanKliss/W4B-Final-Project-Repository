@@ -8,7 +8,6 @@ body {
     background-image: url(/FinalProject2/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
-    box-sizing: border-box;
     position: absolute;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,7 +19,9 @@ body {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 0%;
+}
+.nav-link {
+    text-decoration: none;
 }
 .logo {
     width: 12em;
@@ -30,10 +31,9 @@ body {
     cursor: pointer;
     border-radius: 12px;
 }
-.cart{
-    margin-left: 85em;
+.navbar .cart{
+    margin-left: 71vw;
     width: 6em;
-    cursor: pointer;
 }
 .cart:hover {
     transform: scale(1.1);
