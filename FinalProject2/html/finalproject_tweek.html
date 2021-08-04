@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/W4B-Final-Project-Repository/FinalProject2/css/finalproject.css">
+    <link rel="stylesheet" href="/W4B-Final-Project-Repository/FinalProject2/css/finalproject_tweek.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -31,13 +31,73 @@
         <a href="https://klissglass.com/portfolio/portfolio.html" target="_blank" class="btn">Gallery</a>
     </div>
     <div class="content">
-        <!-- <a href="https://kliss-glass.myshopify.com/" target="_blank" class="btn">Gallery</a> -->
         <h1>Screamin' Hot<br>Since 93'</h1>
         <p>Whimsicle Glass Creations from<br>Klisewski Glass</p> 
     </div>
-    <div class="featurecontainer">
-        <img src="/FinalProject2/Images/Kliss_BOBtanicalFallTrio-p1fakeo0hf1v0lmbv1p8nh71g2t.jpg" class="feature-img" alt="Image of 3 glass art pieces">
+    <div class="javacontainer">
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="/FinalProject2/Images/Kliss_BOBtanicalFallTrio-p1fakeo0hf1v0lmbv1p8nh71g2t.jpg" style="width:100%" class="javaimage">
     </div>
+  
+    <div class="mySlides fade">
+      <img src="/FinalProject2/Images/Kliss_SpottedBOBs.jpg" style="width:100%" class="javaimage">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/FinalProject2/Images/Urhin_Ameth.JPG" style="width:100%" class="javaimage">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/FinalProject2/Images/Kliss_BOBtanicalGroup-p1fakeo0hf1stp1v0hhoa1d7r1mbo.jpg" style="width:100%" class="javaimage">
+      </div>
+  
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </div>
+    <!-- <div class="featurecontainer"> -->
+        <!-- <img src="/FinalProject2/Images/Kliss_BOBtanicalFallTrio-p1fakeo0hf1v0lmbv1p8nh71g2t.jpg" class="feature-img" alt="Image of 3 glass art pieces"> -->
+    <!-- </div> -->
     <div>
         <img src="/FinalProject2/Images/BestKlissPhoto.jpg" class="aboutmeimage" alt="Photo of Bob and Laure Kliss">
     </div>
