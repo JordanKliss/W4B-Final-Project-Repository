@@ -84,6 +84,7 @@ nav ul li a {
 .javacontainer {
     margin-left: 40%;
     margin-top: -18%;
+    max-height: 800px;
 }
 /* Slideshow container */
 .slideshow-container {
