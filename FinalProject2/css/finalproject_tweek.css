@@ -5,14 +5,14 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(FinalProject2/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
+    background-image: url(/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
     font-family: 'Roboto', sans-serif;
 }
 .navbar {
-    background-image: url(FinalProject2/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
+    background-image: url(/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
     background-position: center;
     width: 100%;
     height: 9%;
